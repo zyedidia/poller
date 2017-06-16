@@ -14,7 +14,7 @@ import (
 
 type fdSet syscall.FdSet
 
-const nfdbits = int(unsafe.Sizeof(int32(0)) * 8)
+const nfdbits = int(unsafe.Sizeof(int64(0)) * 8)
 
 func FDSet(fd int, set *fdSet) {
 	set.Bits[fd/nfdbits] |= (1 << (uint)(fd%nfdbits))
