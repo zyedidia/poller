@@ -30,7 +30,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/npat-efault/poller"
+	"github.com/zyedidia/poller"
 )
 
 const (
